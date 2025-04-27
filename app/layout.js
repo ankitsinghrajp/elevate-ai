@@ -33,14 +33,17 @@ export default function RootLayout({ children }) {
           <header>
             <Header />
           </header>
-          <main className="min-h-screen">
+          <main className="min-h-screen w-[100%] overflow-x-hidden">
             {children}
           </main>
-          <footer className="bg-muted/50 py-12 font-semibold">
+          <footer className="bg-[#070707] py-12 font-semibold">
             <div className="container mx-auto text-center text-gray-200">
               <p>
                 Made with ❤️ by Ankit Singh Rajput
               </p>
+              <p className="text-sm text-gray-500">Developer @ curiousAnkit</p>
+              <p className="text-sm text-gray-500">Email: ankitcreativeworks@gmail.com</p>
+              <p className="text-sm text-gray-500">Phone No: 7828736686</p>
             </div>
           </footer>
         </ThemeProvider>
