@@ -6,7 +6,7 @@ import CoverLetterList from "./_components/cover-letter-list";
 
 export default async function CoverLetterPage() {
   const coverLetters = await getCoverLetters();
-
+//I am the extra comment
   return (
     <div>
       <div className="flex flex-col md:flex-row gap-2 items-center justify-between mb-5">
