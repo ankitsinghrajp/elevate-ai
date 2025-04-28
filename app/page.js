@@ -194,7 +194,7 @@ export default function Home() {
         <section className="w-full mb-10 ">
           <div className="mx-auto py-12 md:py-24 gradient rounded-lg">
             <div className="flex flex-col items-center justify-center space-y-4 text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold tracking-tight text-primary-foreground sm:text-4xl md:text-5xl">Ready to Accelerate Your Career with Ankit's Elevate.ai?</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-primary-foreground sm:text-4xl md:text-5xl">Ready to Accelerate Your Career with Ankit&apos;s Elevate.ai?</h2>
           <p className="mx-auto max-w-[600px] text-primary-foreground/80 md:text-xl">Join hundreds of professionals who are advancing their careers with AI-powered guidance.</p>
 
           <Link href="/onboarding" passHref className="">
