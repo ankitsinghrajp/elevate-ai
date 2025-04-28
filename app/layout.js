@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/Header";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
+import { Toaster } from "@/components/ui/sonner";
 // Setup Inter font
 const inter = Inter({
   subsets: ["latin"],
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
           <main className="min-h-screen w-[100%] overflow-x-hidden">
             {children}
           </main>
+          <Toaster richColors/>
           <footer className="bg-[#070707] py-12 font-semibold">
             <div className="container mx-auto text-center text-gray-200">
               <p>
