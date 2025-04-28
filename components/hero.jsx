@@ -4,6 +4,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from './ui/button'
 import { useRef } from 'react'
+import { LayoutDashboard } from 'lucide-react'
+import { SignIn } from '@clerk/nextjs'
 
 const HeroSection = () => {
 
@@ -44,8 +46,10 @@ const HeroSection = () => {
 
         </div>
         <div>
-            <Link href="/dashboard">
-            <Button>Get Started</Button></Link>
+            <Link href="/onboarding">
+            <Button>Get Started</Button>
+            </Link>
+            
         </div>
         <div className='hero-image-wrapper mt-5 md:mt-0'>
             <div ref={imageRef} className='hero-image'>

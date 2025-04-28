@@ -1,11 +1,5 @@
-import React from 'react'
+const AuthLayout = ({ children }) => {
+  return <div className="flex justify-center pt-40">{children}</div>;
+};
 
-const layoutAuth = ({children}) => {
-  return (
-    <div className='flex pt-40 pb-20 justify-center items-center'>
-        {children}
-    </div>
-  )
-}
-
-export default layoutAuth
+export default AuthLayout;

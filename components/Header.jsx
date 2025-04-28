@@ -1,5 +1,5 @@
 import React from 'react'
-import { SignedIn,SignedOut,SignInButton,SignUpButton,UserButton } from '@clerk/nextjs'
+import { SignedIn,SignedOut,SignInButton,SignUp,SignUpButton,UserButton } from '@clerk/nextjs'
 import Link from 'next/link'
 import { Button } from './ui/button'
 import { ChevronDown, FileText, GraduationCap, LayoutDashboard, PenBox, StarsIcon } from 'lucide-react'
@@ -67,19 +67,15 @@ const Header = async () => {
   </DropdownMenuContent>
 </DropdownMenu>
             </SignedIn>
-
-            <SignedOut>
-              <SignInButton>
-                <Button variant={'outline'}>
+             
+             <SignedOut>
+              <Link href={'/onboarding'}>
+              <Button className={'font-bold'}>
                     Sign In
-                    </Button>
-              </SignInButton>
-              <SignUpButton>
-                <Button >
-                    Sign Up
                 </Button>
-              </SignUpButton>
-            </SignedOut>
+                </Link>
+             </SignedOut>
+           
             <SignedIn>
             <UserButton
              appearance={
@@ -89,7 +85,7 @@ const Header = async () => {
                     userPreviewMainIdentifier:"text-sm font-semibold",
                 }
              } 
-             afterSignOutUrl='/'
+             afterSignOutUrl='/onboarding'
              />
             </SignedIn>
 

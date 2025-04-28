@@ -197,7 +197,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold tracking-tight text-primary-foreground sm:text-4xl md:text-5xl">Ready to Accelerate Your Career with Ankit's Elevate.ai?</h2>
           <p className="mx-auto max-w-[600px] text-primary-foreground/80 md:text-xl">Join hundreds of professionals who are advancing their careers with AI-powered guidance.</p>
 
-          <Link href="/dashboard" passHref className="">
+          <Link href="/onboarding" passHref className="">
           <Button
           size={'lg'}
           variant={'secondary'}

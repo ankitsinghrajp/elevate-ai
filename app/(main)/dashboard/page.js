@@ -20,6 +20,7 @@ const IndustryInsightsPage = async () => {
 
   return (
     <div className='container mx-auto'>
+      
       <DashboardView insights={insights} />
     </div>
   )
